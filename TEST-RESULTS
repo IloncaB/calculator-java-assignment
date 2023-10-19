@@ -1,0 +1,7 @@
+Rezultatul testarii black box:
+- operatiile aritmetice se efectueaza corect (inclusiv pentru cifrele cu - in fata)
+- se respecta ordinea operatiilor de calcul
+- imi afiseaza Error daca introduc litere in loc de cifre, exemplu: a+b
+- nu face operatie cu ridicarea la putere, out ERROR, exemplu: 3**2
+- in schimb daca vreau sa ridic la putere doar o cifra si scriu 2**, out 2.0
+- nu face calcule cu procentaje, exemplu:100-5%, out ERROR
