@@ -5,3 +5,26 @@ Rezultatul testarii black box:
 - nu face operatie cu ridicarea la putere, out ERROR, exemplu: 3**2
 - in schimb daca vreau sa ridic la putere doar o cifra si scriu 2**, out 2.0
 - nu face calcule cu procentaje, exemplu:100-5%, out ERROR
+
+
+Test unitar pentru a verifica functionalitatea metodei de calcul de inmultire:
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+class TestResultsTest extends Calculator {
+    Calculator Calculate;
+
+    @BeforeEach
+    void setUp() {
+        Calculator Calculate = new Calculator();
+    }
+
+    @Test
+    @DisplayName("Simple multiplication should work")
+    void testMultiply() {
+        assertEquals(6, 2 * 3);
+    }
+}
